@@ -7,7 +7,7 @@
 <!-- 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script> 
 -->
-<script src="<c:url value='/resources/js/angular.min-1.5.7.js' />"></script>
+<script src="<c:url value='/resources/js/angular.min-1.6.1.js' />"></script>
 <script src="<c:url value='/resources/js/app.js' />"></script>
 <script src="<c:url value='/resources/js/controller/UserController.js' />"></script>
 <script src="<c:url value='/resources/js/service/UserService.js' />"></script>
