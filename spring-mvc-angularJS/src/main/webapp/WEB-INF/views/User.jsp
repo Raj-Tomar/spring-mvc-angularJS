@@ -2,8 +2,18 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
   <head>  
-    <title>AngularJS $http Example</title>  
-    <style>
+    <title>Spring AngularJS $http</title>
+
+<!-- 
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script> 
+-->
+<script src="<c:url value='/resources/js/angular.min-1.5.7.js' />"></script>
+<script src="<c:url value='/resources/js/app.js' />"></script>
+<script src="<c:url value='/resources/js/controller/user_controller.js' />"></script>
+<script src="<c:url value='/resources/js/service/user_service.js' />"></script>
+
+
+<style>
       .username.ng-valid {
           background-color: lightgreen;
       }
@@ -25,7 +35,8 @@
       }
 
     </style>
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+     <link href="<c:url value='/resources/css/bootstrap.min-3.3.5.css' />" rel="stylesheet"></link>
      <link href="<c:url value='/resources/css/app.css' />" rel="stylesheet"></link>
   </head>
   <body ng-app="myApp" class="ng-cloak">
@@ -110,10 +121,5 @@
               </div>
           </div>
       </div>
-      
-      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js"></script>
-      <script src="<c:url value='/resources/js/app.js' />"></script>
-      <script src="<c:url value='/resources/js/service/user_service.js' />"></script>
-      <script src="<c:url value='/resources/js/controller/user_controller.js' />"></script>
   </body>
 </html>
