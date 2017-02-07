@@ -99,11 +99,11 @@
                   <table class="table table-hover">
                       <thead>
                           <tr>
-                              <th>ID.</th>
+                              <th>ID</th>
                               <th>Name</th>
                               <th>Address</th>
                               <th>Email</th>
-                              <th width="20%"></th>
+                              <th colspan="2" style="text-align: center;">Action</th>
                           </tr>
                       </thead>
                       <tbody>
@@ -113,7 +113,10 @@
                               <td><span ng-bind="u.address"></span></td>
                               <td><span ng-bind="u.email"></span></td>
                               <td>
-                              <button type="button" ng-click="ctrl.edit(u.id)" class="btn btn-success custom-width">Edit</button>  <button type="button" ng-click="ctrl.remove(u.id)" class="btn btn-danger custom-width">Remove</button>
+                             	 <button type="button" ng-click="ctrl.edit(u.id)" class="btn btn-success custom-width">Edit</button>
+                              </td>
+                              <td>
+                              	<button type="button" ng-click="ctrl.remove(u.id)" class="btn btn-danger custom-width">Remove</button>
                               </td>
                           </tr>
                       </tbody>
