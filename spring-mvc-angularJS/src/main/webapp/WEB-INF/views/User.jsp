@@ -9,8 +9,8 @@
 -->
 <script src="<c:url value='/resources/js/angular.min-1.5.7.js' />"></script>
 <script src="<c:url value='/resources/js/app.js' />"></script>
-<script src="<c:url value='/resources/js/controller/user_controller.js' />"></script>
-<script src="<c:url value='/resources/js/service/user_service.js' />"></script>
+<script src="<c:url value='/resources/js/controller/UserController.js' />"></script>
+<script src="<c:url value='/resources/js/service/UserService.js' />"></script>
 
 
 <style>
