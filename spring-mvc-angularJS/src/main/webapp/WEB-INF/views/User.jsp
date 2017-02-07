@@ -39,7 +39,7 @@
      <link href="<c:url value='/resources/css/bootstrap.min-3.3.5.css' />" rel="stylesheet"></link>
      <link href="<c:url value='/resources/css/app.css' />" rel="stylesheet"></link>
   </head>
-  <body ng-app="myApp" class="ng-cloak">
+  <body ng-app="userApp" class="ng-cloak">
       <div class="generic-container" ng-controller="UserController as ctrl">
           <div class="panel panel-default">
               <div class="panel-heading"><span class="lead">User Registration Form </span></div>
