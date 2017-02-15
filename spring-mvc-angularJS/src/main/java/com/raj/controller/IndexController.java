@@ -1,16 +1,42 @@
 package com.raj.controller;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-@RequestMapping("/")
-public class IndexController {
 
-	@RequestMapping(method = RequestMethod.GET)
+public class IndexController {
+	
+	@GetMapping(value = "/")
 	public String getIndexPage() {
-		return "User";
+		return "index";
 	}
+	
+	@GetMapping(value = "/home")
+	public String home() {
+		return "home";
+	}
+	
+	@GetMapping(value = "/about")
+	public String aboutUs() {
+		return "about";
+	}
+	
+	@GetMapping(value = "/contact")
+	public String contact() {
+		return "about";
+	}
+
+	@GetMapping(value = "/user")
+	public String getUserIndexPage() {
+		return "/UserView/User";
+	}
+	
+	@GetMapping(value = "/angular")
+	public String getAngularIndexPage() {
+		return "/AngularJSView/AngularJS";
+	}
+	
+	
 
 }
