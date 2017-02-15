@@ -20,10 +20,12 @@ public class UserServiceImpl implements UserService {
 		users = populateDummyUsers();
 	}
 
+	@Override
 	public List<User> findAllUsers() {
 		return users;
 	}
 
+	@Override
 	public User findById(long id) {
 		for (User user : users) {
 			if (user.getId() == id) {
@@ -32,7 +34,8 @@ public class UserServiceImpl implements UserService {
 		}
 		return null;
 	}
-
+	
+	@Override
 	public User findByName(String name) {
 		for (User user : users) {
 			if (user.getUsername().equalsIgnoreCase(name)) {
@@ -41,17 +44,20 @@ public class UserServiceImpl implements UserService {
 		}
 		return null;
 	}
-
+	
+	@Override
 	public void saveUser(User user) {
 		user.setId(counter.incrementAndGet());
 		users.add(user);
 	}
 
+	@Override
 	public void updateUser(User user) {
 		int index = users.indexOf(user);
 		users.set(index, user);
 	}
 
+	@Override
 	public void deleteUserById(long id) {
 
 		for (Iterator<User> iterator = users.iterator(); iterator.hasNext();) {
@@ -61,11 +67,13 @@ public class UserServiceImpl implements UserService {
 			}
 		}
 	}
-
+	
+	@Override
 	public boolean isUserExist(User user) {
 		return findByName(user.getUsername()) != null;
 	}
 
+	@Override
 	public void deleteAllUsers() {
 		users.clear();
 	}
