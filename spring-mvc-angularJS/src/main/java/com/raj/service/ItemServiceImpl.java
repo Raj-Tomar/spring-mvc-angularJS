@@ -32,6 +32,7 @@ public class ItemServiceImpl implements ItemService{
 		
 	}
 	
+	@SuppressWarnings("rawtypes")
 	public List findItemsByCategory(String category) {
 
 		if(StringUtils.equalsIgnoreCase(category, "computers")){
