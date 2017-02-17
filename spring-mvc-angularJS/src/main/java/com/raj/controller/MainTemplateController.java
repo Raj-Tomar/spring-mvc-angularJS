@@ -36,6 +36,11 @@ public class MainTemplateController {
     public String getPrinterDetailsTemplate() {
     	return "template/item_printer_details";	
     }
-
+    
+    @RequestMapping(value="/users")
+    public String getUserTemplate() {
+    	return "template/User";	
+    }
+    
 }
 

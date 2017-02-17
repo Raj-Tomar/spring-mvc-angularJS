@@ -61,6 +61,16 @@ App.config(['$routeProvider', function($routeProvider) {
 			}]
 		}
 	})
+	
+	.when('/items/users', {
+		templateUrl: 'items/users',
+		controller : "UserListController as userListCtrl",
+		resolve: {
+			async: ['UserService', function(UserService) {
+				return UserService.fetchAllUsers();
+			}]
+		}
+	})
 
 	.otherwise({
 		redirectTo:'/items/computers'

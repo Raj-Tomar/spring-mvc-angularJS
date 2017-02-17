@@ -26,13 +26,16 @@
 	<script src="resources/js/service/ItemService.js"></script>
 	<script src="resources/js/controller/ItemListController.js"></script>
 	<script src="resources/js/controller/ItemDetailsController.js"></script>
-
+	
+	<script src="resources/js/controller/UserListController.js"></script>
+	<script src="resources/js/service/UserService.js"></script>
+	
 <!-- 	<base href="/Spring4MVCAngularJSRoutingExample/index.html" />  -->
 
 </head>
 <body>
 	
-		
+	<!-- 	
 	<div class="generic-container">
 		<div class="panel panel-default">
 		    <div class="panel-heading"><span class="lead">All Items</span></div>
@@ -50,7 +53,7 @@
 			</div>
 		</div>
 	</div>
- 	
+ 	 -->
  	
  	<!-- HEADER AND NAVBAR -->
         <header>
@@ -62,7 +65,7 @@
                  
                  <ul class="nav navbar-nav navbar-right">
                     <li><a href="#/"><i class="fa fa-home"></i> Home</a></li>
-                    <li><a href="#/user"><i class="fa fa-user"></i> User</a></li>
+                    <li><a href="#/items/users"><i class="fa fa-user"></i> User</a></li>
                     <li><a href="#/items/computers"><i class="fa fa-laptop"></i> Computers</a></li>
 					<li><a href="#/items/phones"><i class="fa fa-mobile"></i> Phones</a></li>
 					<li><a href="#/items/printers"><i class="fa fa-print"></i> Printers</a></li>
