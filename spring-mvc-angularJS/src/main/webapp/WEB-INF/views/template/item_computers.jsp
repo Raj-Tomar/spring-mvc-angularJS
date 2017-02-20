@@ -16,7 +16,8 @@
 	                <tr ng-repeat="item in itemListCtrl.items">
 	                    <td>{{item.id}}</td>
 	                    <td>{{item.brand}}</td>
-	                    <td><a href="#/items/computerdetails/{{item.id}}">{{item.model}}</a></td>
+	                    <!-- <td><a href="#/items/computerdetails/{{item.id}}">{{item.model}}</a></td> -->
+	                    <td><a href="items/computerdetails/{{item.id}}">{{item.model}}</a></td>
 	                    <td>{{item.price}}</td>
 	                </tr>
 	            </tbody>
