@@ -13,13 +13,13 @@
     
     
     <!-- AngularJS Library Files -->
-    <!-- 
-    <script src="resources/js/AngularJS/angular.min-1.6.2.js"></script>
+    
+    <script src="resources/js/AngularJS/angular.min.js"></script>
     <script src="resources/js/AngularJS/angular-route.min.js"></script>
-     -->
+    <!-- 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.js"></script>
-	
+	 -->
 	
 	<!-- User Defined Files -->
 	<script src="resources/js/app.js"></script>
@@ -29,6 +29,9 @@
 	
 	<script src="resources/js/controller/UserController.js"></script>
 	<script src="resources/js/service/UserService.js"></script>
+	
+	<base href="/spring-anuglarjs/" /> 
+	
 	
 </head>
 <body>
@@ -48,8 +51,8 @@
 					<li><a href="#/items/phones"><i class="fa fa-mobile"></i> Phones</a></li>
 					<li><a href="#/items/printers"><i class="fa fa-print"></i> Printers</a></li>
 					<li><a href="#/items/others"><i class="fa fa-other"></i> Others</a></li>
-                    <li><a href="#about"><i class="fa fa-shield"></i> About</a></li>
-                    <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
+                    <li><a href="#/about"><i class="fa fa-shield"></i> About</a></li>
+                    <li><a href="#/contact"><i class="fa fa-comment"></i> Contact</a></li>
                 </ul> 
                 
             </div>
