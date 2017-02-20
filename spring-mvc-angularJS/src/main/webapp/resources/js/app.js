@@ -1,11 +1,19 @@
 'use strict';
 
-//var App = angular.module('userApp',[]);
-
 var App = angular.module('myApp',['ngRoute']);
 
 App.config(['$routeProvider', function($routeProvider) {
 	$routeProvider
+
+	.when('/items/users', {
+		templateUrl: 'items/users',
+		controller : "UserController as ctrl",
+		resolve: {
+			async: ['UserService', function(UserService) {
+				return UserService.fetchAllUsers();
+			}]
+		}
+	})
 
 	.when('/items/computers', {
 		templateUrl: 'items/computers',
@@ -61,19 +69,9 @@ App.config(['$routeProvider', function($routeProvider) {
 			}]
 		}
 	})
-	
-	.when('/items/users', {
-		templateUrl: 'items/users',
-		controller : "UserListController as userListCtrl",
-		resolve: {
-			async: ['UserService', function(UserService) {
-				return UserService.fetchAllUsers();
-			}]
-		}
-	})
 
 	.otherwise({
-		redirectTo:'/items/computers'
+		redirectTo:'/items/users'
 	});		
 }]);
 

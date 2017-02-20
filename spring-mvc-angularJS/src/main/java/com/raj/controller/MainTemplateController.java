@@ -39,7 +39,7 @@ public class MainTemplateController {
     
     @RequestMapping(value="/users")
     public String getUserTemplate() {
-    	return "template/User";	
+    	return "template/user_details";	
     }
     
 }
