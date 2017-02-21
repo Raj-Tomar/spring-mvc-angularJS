@@ -5,19 +5,18 @@ var App = angular.module('myApp',['ngRoute']);
 App.config(['$routeProvider','$locationProvider', function($routeProvider, $locationProvider) {
 	
 	// use the HTML5 History API Support
-	$locationProvider.html5Mode(true);
+	//$locationProvider.html5Mode(true);
 	//$locationProvider.html5Mode(false).hashPrefix('!');
+	$locationProvider.html5Mode  { 
+			enabled: true, 
+			requireBase: true 
+	});	
 	
 	$routeProvider
 
 	.when('/items/users', {
 		templateUrl: 'items/users',
 		controller : "UserController as ctrl",
-		resolve: {
-			async: ['UserService', function(UserService) {
-				return UserService.fetchAllUsers();
-			}]
-		}
 	})
 
 	.when('/items/computers', {
