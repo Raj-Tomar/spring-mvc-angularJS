@@ -14,8 +14,8 @@
     
     <!-- AngularJS Library Files -->
     
-    <script src="resources/js/AngularJS/angular.min.js"></script>
-    <script src="resources/js/AngularJS/angular-route.min.js"></script>
+    <script src="resources/js/AngularJS/angular.min-1.5.9.js"></script>
+    <script src="resources/js/AngularJS/angular-route.min-1.5.9.js"></script>
     <!-- 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.js"></script>
@@ -30,7 +30,7 @@
 	<script src="resources/js/controller/UserController.js"></script>
 	<script src="resources/js/service/UserService.js"></script>
 	
-	<base href="/spring-anuglarjs/" /> 
+	<base href="/spring-angularjs/" /> 
 	
 	
 </head>
@@ -41,11 +41,11 @@
             <nav class="navbar navbar-default">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="/spring-anuglarjs/"></a>
+                    <a class="navbar-brand" href="/spring-angularjs/"></a>
                 </div>
                  
                  <ul class="nav navbar-nav navbar-right">
-                    <li><a href="/spring-anuglarjs/"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="/spring-angularjs/"><i class="fa fa-home"></i> Home</a></li>
                     <!-- 
                     <li><a href="#/items/users"><i class="fa fa-user"></i> User</a></li>
                     <li><a href="#/items/computers"><i class="fa fa-laptop"></i> Computers</a></li>

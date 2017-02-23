@@ -7,10 +7,6 @@ App.config(['$routeProvider','$locationProvider', function($routeProvider, $loca
 	// use the HTML5 History API Support
 	//$locationProvider.html5Mode(true);
 	//$locationProvider.html5Mode(false).hashPrefix('!');
-	$locationProvider.html5Mode  { 
-			enabled: true, 
-			requireBase: true 
-	});	
 	
 	$routeProvider
 

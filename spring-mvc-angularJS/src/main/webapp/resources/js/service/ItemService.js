@@ -1,11 +1,13 @@
 'use strict';
 
 App.factory('ItemService', ['$http', '$q', function($http, $q){
-
+	
+	var REST_SERVICE_URI = 'http://localhost:8080/spring-angularjs/item/';
+	
 	return {
 		
 			fetchAllItems: function(category) {
-					return $http.get('http://localhost:8080/spring-anuglarjs/item/'+category)
+					return $http.get(REST_SERVICE_URI + category)
 							.then(
 									function(response){
 										return response.data;
@@ -18,7 +20,7 @@ App.factory('ItemService', ['$http', '$q', function($http, $q){
 			},
 		    
 			fetchSpecificItem: function(category,id) {
-				return $http.get('http://localhost:8080/spring-anuglarjs/item/'+category+'/'+id)
+				return $http.get(REST_SERVICE_URI + category+'/'+id)
 						.then(
 								function(response){
 									return response.data;

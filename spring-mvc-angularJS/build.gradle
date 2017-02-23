@@ -31,8 +31,8 @@ dependencies {
 	compile group: 'commons-lang', name: 'commons-lang', version: '2.6'
 	
 	// URL Rewriting
-	compile group: 'org.tuckey', name: 'urlrewritefilter', version: '4.0.4'
-	compile group: 'org.ocpsoft.rewrite', name: 'rewrite-servlet', version: '3.4.1.Final'
+	//compile group: 'org.tuckey', name: 'urlrewritefilter', version: '4.0.4'
+	//compile group: 'org.ocpsoft.rewrite', name: 'rewrite-servlet', version: '3.4.1.Final'
 
 }
 
@@ -41,7 +41,7 @@ eclipse {
   wtp {
     component {
       //define context path, default to project folder name
-      contextPath = 'spring-anuglarjs'
+      contextPath = 'spring-angularjs'
     }
   }
 }

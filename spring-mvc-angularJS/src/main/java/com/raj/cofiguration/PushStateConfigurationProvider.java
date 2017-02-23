@@ -1,4 +1,4 @@
-package com.raj.cofiguration;
+/*package com.raj.cofiguration;
 
 import javax.servlet.ServletContext;
 
@@ -28,7 +28,7 @@ public class PushStateConfigurationProvider extends HttpConfigurationProvider {
 
 	@Override
 	public int priority() {
-		/* This provides ordering if you have multiple configurations */
+		 This provides ordering if you have multiple configurations 
 		return 10;
 	}
-}
+}*/
