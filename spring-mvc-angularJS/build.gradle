@@ -5,7 +5,7 @@ apply plugin: 'eclipse-wtp'
 repositories {
     // Use 'jcenter' for resolving your dependencies.
     // You can declare any Maven/Ivy/file repository here.
-    //jcenter()
+    jcenter()
     mavenCentral()
 }
 
@@ -19,6 +19,14 @@ dependencies {
     // testCompile dependency to testCompile 'org.testng:testng:6.8.1' and add
     // 'test.useTestNG()' to your build script.
     testCompile 'junit:junit:4.12'
+    
+    // Spring Security
+	compile group: 'org.springframework.security', name: 'spring-security-web', version: '4.2.0.RELEASE'
+	compile group: 'org.springframework.security', name: 'spring-security-config', version: '4.2.0.RELEASE'
+	
+	//compile group: 'org.springframework.security', name: 'spring-security-core', version: '4.2.0.RELEASE'
+	//compile group: 'org.springframework.security', name: 'spring-security-taglibs', version: '4.2.0.RELEASE'
+	
     
     compile group: 'log4j', name: 'log4j', version: '1.2.14'
     compile group: 'org.springframework', name: 'spring-webmvc', version: '4.3.3.RELEASE'
