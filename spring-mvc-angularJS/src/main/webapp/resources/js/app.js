@@ -5,7 +5,7 @@ var App = angular.module('myApp',['ngRoute']);
 App.config(['$routeProvider','$locationProvider', function($routeProvider, $locationProvider) {
 	
 	// use the HTML5 History API Support
-	//$locationProvider.html5Mode(true);
+	$locationProvider.html5Mode(true);
 	//$locationProvider.html5Mode(false).hashPrefix('!');
 	
 	$routeProvider
